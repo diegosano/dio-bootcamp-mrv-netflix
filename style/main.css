@@ -13,7 +13,7 @@
 
 body {
     background: var(--black);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
     color: white;
 }
 
@@ -21,7 +21,11 @@ header .container {
     border: 1px solid black;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+}
+
+header .container nav {
+    margin-left: 2em;
 }
 
 header .logo {
@@ -33,12 +37,16 @@ header .logo {
 
 header nav a {
     text-decoration: none;
-    color: #AAA;
+    color: #fff;
     margin-right: 1em;
 }
 
 header nav a:hover {
-    color: #fff;
+    color: #AAA;
+}
+
+header .container img {
+    width: 8em;
 }
 
 /* main movie */
@@ -47,7 +55,7 @@ header nav a:hover {
     font-size: 1.5em;
     background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50) 100%), url('../img/breadking-bad-logo.jpg');
 
-    height: 400px;
+    height: 90vh;
     background-size: cover;
 
     display: flex;
@@ -57,9 +65,64 @@ header nav a:hover {
 }
 
 .main-movie .description {
-    margin-bottom: 2em;
+    margin-top: 0.2em;
 }
 
-.title {
+.main-movie .title {
     font-size: 1.8em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 0.2em;
+}
+
+.btn {
+    background-color: rgba(109, 109, 110, 0.7);
+    border: none;
+    color: white;
+    padding: 0.8em;
+    margin-right: 0.4em;
+    font-size: 0.7em;
+    cursor: pointer;
+    border-radius: 4px;
+    opacity: 1;
+    padding: 0.8rem;
+    margin-top: 1em;
+    font-weight: 400;
+    line-height: 2.4rem;
+}
+
+.btn i {
+    margin-right: 0.1em;
+}
+
+#watch-now {
+    background-color: white;
+    color: black;
+}
+
+#informations:hover {
+    background-color: rgba(109,109,110,0.4);
+    transition: .3s ease all;
+}
+
+#watch-now:hover {
+    background-color: rgba(255, 255, 255, 0.75);
+    transition: .3s ease all;
+}
+
+.container {
+    margin-left: 1em;
+}
+
+.main-movie .container {
+    width: 80%;
+}
+
+.movie-box {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.owl-carousel {
+    margin-top: 1em;
 }
