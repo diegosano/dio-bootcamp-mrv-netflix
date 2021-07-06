@@ -1,0 +1,65 @@
+:root {
+    --red: #E50914;
+    --black: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* base elements */
+
+body {
+    background: var(--black);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .container {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    margin-left: 0.1em;
+    color: var(--red);
+    font-family: 'Arial Black', Times;
+    font-size: 2em;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 1em;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+/* main movie */
+
+.main-movie {
+    font-size: 1.5em;
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50) 100%), url('../img/breadking-bad-logo.jpg');
+
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main-movie .description {
+    margin-bottom: 2em;
+}
+
+.title {
+    font-size: 1.8em;
+}
