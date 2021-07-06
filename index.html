@@ -6,13 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/main.css">
+    <!-- Owl css -->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+    <!-- Responsive -->
+    <link rel="stylesheet" href="style/responsive.css">
     <title>DIO - MRV Netflix Clone</title>
 </head>
 
 <body>
     <header>
         <div class="container">
-            <h2 class="logo">Netflix</h2>
+            <img src="img/netflix-logo.png" alt="Logo da Netflix">
             <nav>
                 <a href="#">Início</a>
                 <a href="#">Séries</a>
@@ -28,17 +33,33 @@
                 <p class="description">Ao saber que tem câncer, um professor passa a fabricar metanfetamina pelo futuro
                     da família, mudando
                     o destino de todos.</p>
-            </div>
-            <div class="buttons">
-                <button role="button" class="btn">
-                    Assistir agora
-                </button>
-                <button role="button" class="btn">
-                    Mais informações
-                </button>
+                <div class="buttons">
+                    <button role="button" class="btn" id="watch-now">
+                        <i class="fas fa-play"></i> Assistir
+                    </button>
+                    <button role="button" class="btn" id="informations">
+                        <i class="fas fa-info-circle"></i> Mais informações
+                    </button>
+                </div>
             </div>
         </div>
     </main>
+
+    <div class="owl-carousel owl-theme">
+        <div class="item"><img class="movie-box" src="img/carousel1.jpg" alt=""></div>
+        <div class="item"><img class="movie-box" src="img/carousel2.jpg" alt=""></div>
+        <div class="item"><img class="movie-box" src="img/carousel3.jpg" alt=""></div>
+        <div class="item"><img class="movie-box" src="img/carousel4.jpg" alt=""></div>
+        <div class="item"><img class="movie-box" src="img/carousel5.jpg" alt=""></div>
+        <div class="item"><img class="movie-box" src="img/carousel6.jpg" alt=""></div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/ea77e16aca.js" crossorigin="anonymous"></script>
+    <!-- Owl Js -->
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>
